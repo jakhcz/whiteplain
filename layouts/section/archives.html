@@ -8,12 +8,23 @@
     <section class="archives">
       <ul>
         {{- range $paginator.PageGroups }}
+        <!--
         <li class="archives-month">{{ .Key }}</li>
         <li class="archives-monthly-container">
+        -->
           {{- range .Pages }}
+          <!--
           <ul>
+          -->
             <li class="archives-item">
-              <a href="{{ .Permalink | relURL }}">{{ .Title }}</a>
+            <div class="archives-item-container">
+              <div class="archives-item-date-container">
+                <time>{{ .Date.Format (default "January 2, 2006" $.Site.Params.dateFormat) }}</time>
+              </div>
+              <div class="archives-item-link-container">
+                <a href="{{ .Permalink | relURL }}">{{ .Title }}</a>
+              </div>
+              <!--
               <ul class="taxonomies">
                 {{- if isset .Params "categories" }}
                 {{- range .Params.categories }}
@@ -26,11 +37,16 @@
                 {{- end }}
                 {{- end }}
               </ul>
-              <time>{{ .Date.Format (default "January 2, 2006" $.Site.Params.dateFormat) }}</time>
+              -->
+            </div>
             </li>
+          <!--
           </ul>
+          -->
           {{- end }}
+        <!--
         </li>
+        -->
         {{- end }}
       </ul>
     </section>

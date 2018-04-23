@@ -1,0 +1,156 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI";
+  color: #444444;
+  overflow-y: scroll;
+  line-height: 1.2;
+}
+a, a:visited {
+  color: #0a6e96;
+  text-decoration: none;
+}
+a:hover, a:active {
+  color: #1191c4;
+}
+
+/* Site header */
+.site-navi a, .site-navi a:visited {
+  color: #004966;
+  text-decoration: none;
+  font-family: "Inknut Antiqua";
+}
+.site-navi a:hover, .site-navi a:active {
+  color: #0a6e96;
+}
+
+/* Article */
+.article > .article-title {
+  color: #004966;
+  font-family: "Asul";
+  font-size: 1.6rem;
+}
+.article-bottom {
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+.pager a, .pager a:visited {
+  color: #004966;
+}
+.pager a:hover, .pager a:active {
+  color: #0a6e96;
+}
+
+/* List Pages */
+.article-titles > .article-title {
+  color: #004966;
+  font-family: "Asul";
+  font-size: 1.6rem;
+}
+.article-titles > .article-title:hover, .article-titles > .article-title:hover {
+  color: #0a6e96;
+}
+.article-meta li {
+  font-size: 0.75rem;
+  padding: 0;
+  padding-right: 4px;
+  margin: 0;
+}
+.article-meta a, .article-meta a:visited {
+  color: #444444;
+}
+.article-meta a:hover, .article-meta a:active {
+  color: gray;
+}
+.list .article-content a {
+  color: #444444;
+}
+.article-readmore a, .article-readmore a:visited {
+  color: #004966;
+  font-size: 0.8rem;
+}
+.article-readmore a:hover, .article-readmore a:active {
+  color: #0a6e96;
+}
+.list .article {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: none;
+}
+
+/* Archives */
+.archives .archives-month, .archives .archives-item {
+  border-style: none;
+}
+.archives .archives-item a, .archives .archives-item a:visited {
+  color: #004966;
+}
+.archives .archives-item a:hover, .archives .archives-item a:active {
+  color: #0a6e96;
+}
+.archives .archives-item time {
+  font-family: "Forum";
+}
+.archives-item-container {
+  width: 100%;
+}
+.archives-item-date-container {
+  display: inline-block;
+  width: 15%;
+  padding-right: 5px;
+  text-align: right;
+}
+.archives-item-link-container {
+  display: inline-block;
+  width: 80%;
+  padding-left: 5px;
+  text-align: left;
+}
+
+/* breadcrumb */
+.breadcrumb {
+  font-family: "Asul";
+}
+.breadcrumb a, .breadcrumb a:visited {
+  color: #004966;
+}
+.breadcrumb a:hover, .breadcrumb a:active {
+  color: #0a6e96;
+}
+
+/* Site footer */
+.site-footer a, .site-footer a:visited {
+  color: #004966;
+}
+.site-footer a:hover, .site-footer a:active {
+  color: #0a6e96;
+}
+
+/* Terms Page */
+.terms > ul > li {
+  border-bottom: none;
+}
+.terms a, .terms a:visited {
+  color: #004966;
+}
+.terms a:hover, .terms a:active {
+  color: #0a6e96;
+}
+
+/* About */
+.author-name {
+  font-family: "Asul";
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+/* Syntax */
+pre, code {
+  background-color: #e8e8e8;
+  border-radius: 3px;
+}
+pre {
+  padding: 5px;
+}
+pre > code {
+  padding: 0;
+}
+

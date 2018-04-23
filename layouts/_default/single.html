@@ -19,6 +19,26 @@
         </li>
         {{- end }}
         {{- end }}
+        <!--
+        {{- if .Params.tags }}
+        {{- range .Params.tags }}
+        <li class="article-meta-tags">
+          <a href="{{ "/" | relURL }}tags/{{ . | urlize }}/">
+            <svg class="icon"><use xlink:href="{{ "images/fa-solid.svg" | relURL }}#tag"></use></svg>
+            {{ . }}
+          </a>&nbsp;
+        </li>
+        {{- end }}
+        {{- end }}
+        -->
+      </ul>
+      <!--
+      {{ partial "toc.html" . }}
+      -->
+      {{ .Content }}
+    
+      <hr class="article-bottom">
+      <ul class="article-meta">
         {{- if .Params.tags }}
         {{- range .Params.tags }}
         <li class="article-meta-tags">
@@ -30,8 +50,6 @@
         {{- end }}
         {{- end }}
       </ul>
-      {{ partial "toc.html" . }}
-      {{ .Content }}
     </article>
 
     {{- if .Params.series }}
@@ -52,6 +70,7 @@
       {{- end }}
     </section>
     {{- end }}
+    
 
     {{ partial "share.html" . }}
 
@@ -61,6 +80,7 @@
     </div>
     {{- end }}
 
+    <!--
     <ul class="pager article-pager">
       {{- if .NextInSection }}
       <li class="pager-newer">
@@ -77,5 +97,6 @@
       <li class="pager-older pager-noitem">Older &gt;</li>
       {{- end }}
     </ul>
+    -->
   </div>
 {{ end }}

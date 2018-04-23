@@ -30,6 +30,7 @@
           </li>
           {{- end }}
           {{- end }}
+          <!--
           {{- if .Params.tags }}
           {{- range .Params.tags }}
           <li class="article-meta-tags">
@@ -40,6 +41,7 @@
           </li>
           {{- end }}
           {{- end }}
+          -->
         </ul>
         {{- if .Params.image }}
         <a href="{{ .Permalink | relURL }}"><img src="{{ .Params.image }}" class="article-image" /></a>
@@ -48,10 +50,11 @@
           {{- if .Truncated }}
           {{ .Summary }}
           {{- else }}
-          {{ .Content }}
+          {{ .Content | plainify }}
           {{- end }}
+          ...
         </div>
-        <div class="article-readmore"><a href="{{ .Permalink | relURL }}">Read more...</a></div>
+        <div class="article-readmore"><a href="{{ .Permalink | relURL }}">read more</a></div>
         <div class="article-floatclear"></div>
       </article>
       {{- end }}
