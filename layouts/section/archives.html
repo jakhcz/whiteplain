@@ -10,13 +10,6 @@
     <section class="archives">
       <ul>
         {{ range (where .Site.Pages "Kind" "page") }}
-        <!--
-        {{- range $paginator.PageGroups }}
-        <li class="archives-month">{{ .Key }}</li>
-        <li class="archives-monthly-container">
-          {{- range .Pages }}
-          <ul>
-          -->
             <li class="archives-item">
             <div class="archives-item-container">
               <div class="archives-item-date-container">
@@ -25,31 +18,10 @@
               <div class="archives-item-link-container">
                 <a href="{{ .Permalink | relURL }}">{{ .Title }}</a>
               </div>
-              <!--
-              <ul class="taxonomies">
-                {{- if isset .Params "categories" }}
-                {{- range .Params.categories }}
-                <li class="taxonomies-item"><a href="{{ "/" | relURL }}categories/{{ . | urlize }}/"><svg class="icon"><use xlink:href="{{ "images/fa-solid.svg" | relURL }}#folder"></use></svg>{{ . }}</a></li>
-                {{- end }}
-                {{- end }}
-                {{- if isset .Params "tags" }}
-                {{- range .Params.tags }}
-                <li class="taxonomies-item"><a href="{{ "/" | relURL }}tags/{{ . | urlize }}/"><svg class="icon"><use xlink:href="{{ "images/fa-solid.svg" | relURL }}#tag"></use></svg>{{ . }}</a></li>
-                {{- end }}
-                {{- end }}
-              </ul>
-              -->
             </div>
             </li>
-          <!--
-          </ul>
-          {{- end }}
-        </li>
-        {{- end }}
-        -->
         {{ end }}
       </ul>
     </section>
-    {{ template "_internal/pagination.html" . }}
   </div>
 {{ end }}
