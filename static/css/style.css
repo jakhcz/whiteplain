@@ -300,15 +300,24 @@ blockquote blockquote blockquote blockquote {
 }
 
 /* About */
+/*
 .about {
   text-align: center;
 }
+*/
 .author {
+}
+.author-container {
+  text-align:center;
 }
 .author-name {
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 10px;
+  display:inline;
+}
+.author-avatar-container {
+  display:inline;
 }
 .author-avatar-wrapper {
   margin-left: auto;
